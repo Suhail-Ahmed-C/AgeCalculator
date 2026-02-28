@@ -1,0 +1,139 @@
+/* ===============================
+   CSS VARIABLES (THEME COLORS)
+================================ */
+:root {
+    --bg: #fff3e0;
+    --card: #f09c1d;
+    --text: #000;
+}
+
+body.dark {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #fff;
+}
+
+/* ===============================
+   GLOBAL STYLES
+================================ */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+.container {
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 20px;
+
+    background-color: var(--card);
+    border: 5px solid #ff5722;
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s;
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+h1 {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+/* ===============================
+   FORM LAYOUT
+================================ */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================ */
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+
+    border: 2px solid #9c27b0;
+    border-radius: 6px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    background-color: #bff812;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65100;
+}
+
+/* ===============================
+   RESULT TEXT
+================================ */
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===============================
+   THEME TOGGLE BUTTON
+================================ */
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    padding: 8px 12px;
+    font-size: 22px;
+
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* ===============================
+   DARK MODE EXTRAS
+================================ */
+body.dark input {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: #ff9800;
+}
+
+body.dark button {
+    background: #ff9800;
+    color: #000;
+}
